@@ -1,0 +1,22 @@
+{
+  "name": "bu-heroku-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server-express-node.js",
+  "scripts": {
+    "start": "node server-express-node.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StefKas1/bu-heroku-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StefKas1/bu-heroku-server/issues"
+  },
+  "homepage": "https://github.com/StefKas1/bu-heroku-server#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
