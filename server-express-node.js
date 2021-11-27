@@ -3,11 +3,11 @@
 require("dotenv/config");
 const { MongoClient, ObjectId } = require("mongodb");
 try {
-  let client = new MongoClient(process.env.MONGO_DB_CONNECTION);
+  var client = new MongoClient(process.env.MONGO_DB_CONNECTION);
 } catch (err) {
   console.log(err);
   // Set in Heroku's 'config vars' (apps >> bu-heroku-server >> settings).
-  let client = new MongoClient(process.env.URI);
+  var client = new MongoClient(process.env.URI);
 }
 
 // Express.
