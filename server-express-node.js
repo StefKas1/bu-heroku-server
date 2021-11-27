@@ -44,7 +44,7 @@ app.get("/", function (req, res) {
 });
 
 // Inserts into MongoDB.
-app.post("/items", function (req, res) {
+app.post("/feedback", function (req, res) {
   (async () => {
     try {
       await client.connect();
@@ -73,7 +73,7 @@ app.post("/items", function (req, res) {
 });
 
 // Deletes in MongoDB by id.
-app.delete("/items/:id", function (req, res) {
+app.delete("/feedback/:id", function (req, res) {
   (async () => {
     try {
       await client.connect();
