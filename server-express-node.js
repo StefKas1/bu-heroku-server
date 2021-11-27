@@ -16,6 +16,11 @@ const app = express();
 // Either Heroku sets port or port 3000 is used.
 const port = process.env.PORT || 3000;
 
+// Cors.
+const cors = require("cors");
+
+// Enables all CORS requests.
+app.use(cors());
 // Converts every request body to JSON before functions get, post, ... work with data in body.
 app.use(express.json());
 
